@@ -41,7 +41,6 @@ file(GLOB HTTP_SERVER_HEADERS "src/*.h")
 include_directories ( 
                        src 
                     )
-                    
 
 #-------------------------------------------------------------------------------
 # Список библиотек к линковке
@@ -50,22 +49,14 @@ set ( HTTP_SERVER_LIBRARIES
      pthread
     )
 
-
 #-------------------------------------------------------------------------------
 # Cделать бинарник, добавить к линковце цели список библиотек
 #-------------------------------------------------------------------------------
-
-
 
 #Server
 add_executable ( ${PROJECT}_server  ${HTTP_SERVER_HEADERS} ${HTTP_SERVER_SOURCES}  sample/main_server.cpp)
 target_link_libraries ( ${PROJECT}_server  ${HTTP_SERVER_LIBRARIES}  )
 
-
 #Buffer
 add_executable ( ${PROJECT}_buffer  ${HTTP_SERVER_HEADERS} ${HTTP_SERVER_SOURCES}  sample/main_buffer.cpp)
 target_link_libraries ( ${PROJECT}_buffer  ${HTTP_SERVER_LIBRARIES}  )
-
-
-
-

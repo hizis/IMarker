@@ -8,10 +8,7 @@
 #ifndef BUFFER_H_
 #define BUFFER_H_
 
-#include "BufferImpl.h"
-
-
-//std::vector<>
+#include <cstddef>
 
 
 

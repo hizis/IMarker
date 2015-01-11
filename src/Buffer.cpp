@@ -10,6 +10,8 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <assert.h>
+#include <cstring>
+#include <algorithm>
 
 //    _M_reallocate(size_type __n)
 //    {

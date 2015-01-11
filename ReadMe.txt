@@ -1,6 +1,24 @@
 
 
 
+
+##############################
+# How to build project
+#############################
+
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+make
+
+
+
+
+
+
+
+
+
+
 Keep the following overall goals of the resulting code in mind:
  - keep it minimal and simple, but complete enough to be practically useful
  - elegant and convenient to use public API
